@@ -1,0 +1,353 @@
+
+
+/**
+Qiaodan Luo B00880104 part starts.
+**/
+
+
+
+#main-game {
+    display: none;
+    width: 1000px;
+    height: 550px;
+    background-image: url("../img/35771966_p1.jpg");
+    /**Pictures of the background is downloaded from www.pixiv.net.
+        Date accessed: Oct 18, 2020
+        URL: https://www.pixiv.net/artworks/35771966
+        Author: Ano Jyou **/
+}
+
+#hidden-password {
+    color: white;
+}
+
+/**
+control the flags.
+*/
+#choice1, #choice2, #choice3 {
+    font-size: 20px;
+    position: relative;
+    top: 250px;
+    left: 600px;
+    display: none;
+    margin: 10px;
+}
+
+.dia {
+    display: none;
+}
+
+#dialog {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 3px 20px;
+    position: absolute;
+    top: 510px;
+    left: 120px;
+    width: 700px;
+    height: 100px;
+}
+
+#click-next {
+    background-color: yellow;
+    border: 2px solid black;
+    font-size: 20px;
+    position: absolute;
+    top: 550px;
+    left: 800px;
+}
+/**
+Control the pictures
+**/
+#angry {
+    position: absolute;
+    top: 55px;
+    left: 250px;
+    width: 500px;
+}
+
+#crazy {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    width: 500px;
+    display: none;
+}
+
+#happy {
+    position: absolute;
+    top: 55px;
+    left: 250px;
+    width: 500px;
+    display: none;
+}
+
+#sad {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    width: 500px;
+}
+
+/**
+Qiaodan Luo part ends.
+**/
+
+/*==================================================================================*/
+
+/*YuxuanWang B00880845 part STARTs here*/
+#YuxuanWang {
+    font-family: Arial, Calibri, sans-serif;
+    min-width: 600px;
+    min-height: 455px;
+    margin: auto 20px auto 20px;
+    background-color: #a29f99;
+}
+body {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
+/* style of top bar*/
+#top-bar {
+    border: 5px groove red;
+    min-height: 30px;
+    background-color: antiquewhite;
+}
+
+    #top-bar > h4 {
+        text-align: left;
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+
+/* style of game-main*/
+#game-main {
+    border: 5px solid #a4a9b1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#goal {
+    flex: 1;
+    border: 3px solid #cac4b4;
+    background-color: #a4a9b1;
+    margin: 15% 2% auto 2%;
+    flex-wrap: wrap;
+    min-height: 220px;
+    min-width: 170px;
+}
+
+#goal img {
+    height: 40%;
+    width: 40%;
+}
+
+#game {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#game > img {
+    width: 31%;
+    height: 31%;
+
+}
+
+#game > img:hover {
+    background-color: lightseagreen;
+}
+
+/* style of bot-bar*/
+#bot-bar {
+    border: 3px solid #699793;
+    min-height: 43px;
+    background-color: #cac4b4;
+    display: block;
+}
+
+#bot-bar > #next {
+    display: inline-block;
+    border: 1px solid black;
+    min-height: 43px;
+    min-width: 70px;
+    height: 5vw;
+    width: 8vw;
+    background-color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    text-size-adjust: auto;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+#bot-bar > #next:hover {
+    background-color: lightseagreen;
+    color: white;
+    border: 2px solid black;
+    margin-left: 1000px;
+}
+
+#bot-bar > #msg {
+    display: inline;
+}
+
+#grade-board {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    background-color: aquamarine;
+    justify-content: center;
+    grid-column-gap: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+/*YuxuanWang part ENDs*/
+
+/*==================================================================================*/
+
+/*Nicholas part STARTs here B00797153*/
+#Nicholas {
+    background-color: #d3c1b2;
+}
+#questions {
+    float: left;
+    display: none;
+}
+
+.q {
+    display: none;
+    width: 220px;
+}
+
+#answers {
+    display: none;
+    float: left;
+    margin: 15px 0 0 10px;
+}
+
+#next-stage {
+    display: none;
+}
+/*Nicholas part ENDs*/
+
+
+/*==================================================================================*/
+
+/* Diwen Yao Part
+   B00748107
+*/
+
+* Diwen Yao Part
+B00748107
+*/
+
+.h1-text {
+    border: 1px solid brown;
+    width: auto;
+}
+
+
+.h2-text {
+    color: cadetblue;
+    font-style: italic;
+}
+
+#game_diwen {
+    display: none;
+}
+
+#calculation {
+    display: none;
+}
+
+#go_next {
+    display: none;
+}
+/* Diwen Yao Part
+   ENDs
+*/
+
+
+/*==================================================================================*/
+
+
+/*Logan part starts*/
+#logan {
+    font-family: Impact, Charcoal, sans-serif;
+    min-height: 1000px;
+    display: block;
+}
+
+#logan h1 {
+    font-size: 300%;
+    text-align: center;
+    padding-top: 20px
+}
+
+#logan p {
+    font-size: 170%;
+}
+
+#guidance {
+    font-size: 170%;
+    text-align: center;
+}
+
+#logan .buttons {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 5%;
+}
+
+.buttons button {
+    background-color: blue;
+    color: rgb(247, 185, 70);
+    padding: 40px 60px;
+    font-size: 300%;
+}
+
+#disclaimer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75%;
+    bottom: 10px;
+    text-align: left;
+    padding: 0;
+}
+
+#logan .questions {
+    display: none;
+    position: relative;
+    top: 100px;
+}
+
+form input {
+    display: block;
+}
+
+#logan #correct_logan {
+    display: none;
+    position: relative;
+    top: 100px;
+}
+
+#NextStage {
+    display: none;
+    position: relative;
+    top: 100px;
+}
+
+#logan #incorrect_logan {
+    display: none;
+    position: relative;
+    top: 100px;
+}
+
+/*Logan part ENDs*/

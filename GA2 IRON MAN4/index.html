@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ESCAPE</title>
+        <link rel="stylesheet" href="css/main.css">
+	    <script src="js/scripts.js" defer></script>
+        
+    </head>
+
+    <body id="main_frame_of_5" onload="welcome()">
+        <!--Qiaodan Luo B00880104 part starts -->
+        <section id="stage-qiaodan">
+            <!-- this part will show to users when they first open the webpage-->
+            <div id="stage-title">
+                <h2>Stage - Qiaodan Luo</h2>
+                <button id="startbtn" onclick="start()">Start Game</button>
+            </div>
+
+            <!-- The resources of the text game -->
+            <div id="main-game">
+
+                <button id="choice1" onclick="flag1()">I don't even know who you are!</button>
+                <button id="choice2" onclick="flag2()">Sorry honey...Let's go for date!</button>
+                <button id="choice3" onclick="flag3()">I just want the password!!!</button>
+
+                <!--Pictures of the character are downloaded from www.ac-illust.com
+            Date accessed: Oct 18, 2020
+            URL: https://www.ac-illust.com/main/detail.php?id=2051117&word=%E5%85%83%E6%B0%97%E3%81%AA%E5%A5%B3%E5%AD%90%E9%AB%98%E7%94%9F_%E8%A1%A8%E6%83%85%E5%B7%AE%E5%88%86_%E3%82%B2%E3%83%BC%E3%83%A0&searchId=111232727
+            Author: Mutou
+            -->
+                <img src="img/6543221.png" alt="girl_angry" id="angry">
+                <img src="img/25795170.png" alt="girl_crazy" id="crazy">
+                <img src="img/77059452.png" alt="girl_happy" id="happy">
+                <img src="img/81849354.png" alt="girl_sad" id="sad">
+
+                <div id="dialog">
+                    <p id="dia_1" class="dia">You are soooo late!! <br>Did you forget that we are supposed to go out for a date today??</p>
+                    <p id="dia_2" class="dia">Sure! Let's go!<br>I love you baby! </p>
+                    <p id="dia_3" class="dia">What? You forget your girl friend?? <br>Ok, let's break up!  </p>
+                    <p id="dia_4" class="dia">Oh...I see. <br>But you are looking at the wrong place. </p>
+
+                    <p id="be" class="dia" onclick="start()">~Bad End~ <br> Click here to restart.</p>
+                    <p id="he" class="dia" onclick="start()">~Happy End~ (?) <br> Click here to restart.</p>
+                    <p id="hint" class="dia" onclick="start()">~The truth is hidden out there~ <br> Click here to restart.</p>
+                </div>
+
+                <div id="click-next" onclick="next()">
+                    <p>NEXT</p>
+                </div>
+            </div>
+
+            <!-- this part is the password of this stage. It appears white and won't be seen until selected-->
+            <div id="hidden-password">
+                <p>password: 123456</p>
+            </div>
+
+            <!-- Qiaodan Luo part ends. -->
+        </section>
+
+        <!--=========================================================================================-->
+        <!--Here starts YuxuanWang's B00880845 section-->
+        <section id="YuxuanWang">
+
+            <!-- This section is the top bar,
+        stage number & mark are shown here-->
+            <section id="top-bar">
+                <h4>STAGE: Yuxuan</h4>
+            </section>
+
+            <!-- This section is the main area of the game
+        goal is shown on the left side, and play area
+        is on the right side-->
+            <section id="game-main">
+                <aside id="goal">
+                    <!-- This picture was painted by YuxuanWang with ipad pro on 18-Oct-2020-->
+                    <img src="img/iron-man-icon.png" alt="task-img">
+                    <h4 id="mark">Found</h4>
+                    <p>Find all of them in one time</p>
+                </aside>
+
+                <section id="game">
+                    <img id="pic1" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                    <img id="pic2" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                    <img id="pic3" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                    <img id="pic4" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                    <img id="pic5" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                    <img id="pic6" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                    <img id="pic7" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                    <img id="pic8" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                    <img id="pic9" class="bg-icon" src="img/blanc.png" alt="bg-icon">
+                </section>
+            </section>
+
+            <!-- This section is the bottom bar, "click to next stage" is here-->
+            <section id="bot-bar">
+                <button id="next">Get Diamond</button>
+                <p id="msg"></p>
+            </section>
+
+        </section>
+
+        <!--=========================================================================================-->
+        <!--Nicholas Siese B00797153 section-->
+        <section id="Nicholas">
+            <section id="main-header">
+                <h3>STAGE: NICHOLAS SIESE</h3>
+                <button id="startbutton" onclick="start_nic()">Start</button>
+            </section>
+            <!--This is the main game part with the questions as a p element and the ansers all being buttons with corresponding correct and incorrect functions-->
+            <div id="game">
+                <section id="questions">
+                    <p id="question1" class="q">What is 2+2?</p>
+                    <p id="question2" class="q">What is 2*2?</p>
+                    <p id="question3" class="q">What is 2^2?</p>
+                    <p id="question4" class="q">What is the derivative of 4x?</p>
+                    <p id="question5" class="q">What is the derivative of 8x - 4x?</p>
+                </section>
+
+                <section id="answers">
+                    <section id="answers-1">
+                        <button id="answer1-1" onclick="correct_nic()">4</button>
+                        <button id="answer1-2" onclick="incorrect()">2</button>
+                        <button id="answer1-3" onclick="incorrect()">5</button>
+                        <button id="answer1-4" onclick="incorrect()">1</button>
+                    </section>
+
+                    <section id="answers-2">
+                        <button id="answer2-2" onclick="incorrect()">2</button>
+                        <button id="answer2-3" onclick="incorrect()">0</button>
+                        <button id="answer2-1" onclick="correct_nic()">4</button>
+                        <button id="answer2-4" onclick="incorrect()">10</button>
+                    </section>
+
+                    <section id="answers-3">
+                        <button id="answer3-2" onclick="incorrect()">8</button>
+                        <button id="answer3-1" onclick="correct_nic()">4</button>
+                        <button id="answer3-3" onclick="incorrect()">567</button>
+                        <button id="answer3-4" onclick="incorrect()">101</button>
+                    </section>
+
+                    <section id="answers-4">
+                        <button id="answer4-1" onclick="correct_nic()">4</button>
+                        <button id="answer4-2" onclick="incorrect()">x</button>
+                        <button id="answer4-3" onclick="incorrect()">y</button>
+                        <button id="answer4-4" onclick="incorrect()">2</button>
+                    </section>
+
+                    <section id="answers-5">
+                        <button id="answer5-2" onclick="incorrect()">2x</button>
+                        <button id="answer5-3" onclick="incorrect()">50</button>
+                        <button id="answer5-4" onclick="incorrect()">x+y</button>
+                        <button id="answer5-1" onclick="correct_nic()">4</button>
+                    </section>
+                </section>
+                <!--Outputs for the user to see if they are getting the questions right or wrong-->
+                <p id="incorrect" class="q">False try again</p>
+                <p id="correct_nic" class="q">Good job that is correct!!</p>
+                <p id="stage-passed" class="q">Congratulations you have passed my stage!!</p>
+                <button id="next-stage" onclick="nextStage()">Get Diamond</button>
+            </div>
+        </section>
+
+        <!--=========================================================================================-->
+        <!--Logan Brufatto B00881950-->
+        <section id="logan">
+            <h1>Web Development JEOPARDY!</h1>
+            <p id="guidance">Answer a question correctly to move on.</p>
+            <div id="disclaimer">
+                <p id="disclaimer">DISCLAIMER: I am not affiliated with JEOPARDY! or CBS. No real monetary prizes will be awarded.</p>
+            </div>
+            <div id="game_logan">
+                <!--Buttons to direct player to question.-->
+                <section class="buttons">
+                    <button type="button" class="buttons" id="100" onclick="button1()">
+                        <strong>$100</strong>
+                    </button>
+                    <button type="button" class="buttons" id="200" onclick="button2()">
+                        <strong>$200</strong>
+                    </button>
+
+                    <button type="button" class="buttons" id="300" onclick="button3()">
+                        <strong>$300</strong>
+                    </button>
+
+                    <button type="button" class="buttons" id="400" onclick="button4()">
+                        <strong>$400</strong>
+                    </button>
+
+                    <button type="button" class="buttons" id="500" onclick="button5()">
+                        <strong>$500</strong>
+                    </button>
+                </section>
+            </div>
+
+            <section class="questions" id="q1">
+                <p>The markup language that is most commonly used to describe the layout and structure of a webpage.</p>
+
+                <p id="what">What is...</p>
+                <form onsubmit="" method="GET">
+
+                    <input type="button" name="markup" value="YML" id="q1a1" onclick="isIncorrect()">
+                    <input type="button" name="markup" value="HTML" id="q1a2" onclick="isCorrect()">
+                    <input type="button" name="markup" value="XML" id="q1a3" onclick="isIncorrect()">
+                    <input type="button" name="markup" value="CSS" id="q1a4" onclick="isIncorrect()">
+
+                </form>
+            </section>
+            <section class="questions" id="q2">
+                <p>The html tag used to create paragraphs.</p>
+
+                <p id="what">What is...</p>
+                <form onsubmit="" method="GET">
+
+                    <input type="button" name="paragraph_tag" value="p" id="q2a1" onclick="isCorrect()">
+                    <input type="button" name="paragraph_tag" value="para" id="q2a2" onclick="isIncorrect()">
+                    <input type="button" name="paragraph_tag" value="div" id="q2a3" onclick="isIncorrect()">
+                    <input type="button" name="paragraph_tag" value="paragraph" id="q2a4" onclick="isIncorrect()">
+
+                </form>
+            </section>
+            <section class="questions" id="q3">
+                <p>The most widely accepted tag to make italic characters.</p>
+
+                <p id="what">What is...</p>
+                <form onsubmit="" method="GET">
+
+                    <input type="button" name="markup" value="italics" id="q3a1" onclick="isIncorrect()">
+                    <input type="button" name="markup" value="italic" id="q3a2" onclick="isIncorrect()">
+                    <input type="button" name="markup" value="i" id="q3a3" onclick="isIncorrect()">
+                    <input type="button" name="markup" value="em" id="q4a4" onclick="isCorrect()">
+
+                </form>
+            </section>
+            <section class="questions" id="q4">
+                <p>The 4 possible values you can assign to the CSS position property in order to position elements.</p>
+
+                <p id="what">What is...</p>
+                <form onsubmit="" method="GET">
+
+                    <input type="button" name="position" value="Still, Relative, Static, Absolute" id="q4a1" onclick="isIncorrect()">
+                    <input type="button" name="position" value="Static, Fix, Relate, Absolute" id="q4a2" onclick="isIncorrect()">
+                    <input type="button" name="position" value="Static, Relative, Fixed, Absolute" id="q4a3" onclick="isCorrect()">
+                    <input type="button" name="position" value="Static, Top, Bottom, Fixed" id="q4a4" onclick="isIncorrect()">
+
+                </form>
+            </section>
+            <section class="questions" id="q5">
+                <p>Contrast, Repitition, Alignment, and ______ makes up the acronym CRAP, which are 4 principles of design.</p>
+
+                <p id="what">What is...</p>
+                <form onsubmit="" method="GET">
+
+                    <input type="button" name="markup" value="Placement" id="q5a1" onclick="isIncorrect()">
+                    <input type="button" name="markup" value="Proximity" id="q5a2" onclick="isCorrect()">
+                    <input type="button" name="markup" value="Parallel" id="q5a3" onclick="isIncorrect()">
+                    <input type="button" name="markup" value="Place" id="q5a4" onclick="isIncorrect()">
+
+                </form>
+            </section>
+
+            <p id="correct_logan">Correct! Move on to the next stage, or select another question if you'd like to get them all right!</p>
+            <button type="button" id="NextStage" onclick="nextStageLogan()">
+                <strong>Get Diamond</strong>
+            </button>
+            <p id="incorrect_logan">Incorrect! Please Try Again by Selecting a Question.</p>
+
+
+        </section>
+
+        <!--=========================================================================================-->
+        <!-- Diwen Yao Part B00748107-->
+        <section id="Diwen">
+            <div id="start">
+                <h1 class="h1-text">Hello & Welcome!!</h1>
+                <h2 class="h2-text">Are you ready to start the game?? :)))</h2>
+
+                <h3>Note: To pass this game, your calculation skills will be useful, and your LUCK does matter!! </h3>
+                <h3>Good Luck!!!!!!!!!!</h3>
+                <!--This Video was taken by Diwen Yao in Feb,2018,Toronro.-->
+                <video height="300" controls>
+                    <source src="img/Welcome.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <button id="sbtn" onclick="start_game()">Start Game</button>
+
+
+            <div id="game_diwen">
+                <h2>I have got a number from 1-5 here, guess what I got!! </h2>
+                <h3>Please enter your number: </h3>
+                <button onclick="input()"> Enter</button>
+                <p id="result"></p>
+            </div>
+            <!--Game section that ask for calculation-->
+            <div id="calculation">
+
+                <h3>You now need to calculate the result of the equation, if wrong do it again!</h3>
+                <h3>Click here to start</h3>
+
+                <button id="s_cal" onclick="random_cal()">Start!</button>
+                <p id="result_c"></p>
+                <p id="time-test"></p>
+
+            </div>
+
+            <div id="go_next">
+                <h1>Congrats!! You passed this stage!!!</h1>
+                <button id="next_stage">Get Diamond</button>
+            </div>
+        </section>
+
+        <!-- Diwen part ENDs-->
+
+
+        <section id="grade-board">
+            <!--This section is also completed by YuxuanWang-->
+            <img class="diamond" id="diamond-1" src="img/diamond-hide.png" alt="diamond">
+            <img class="diamond" id="diamond-2" src="img/diamond-hide.png" alt="diamond">
+            <img class="diamond" id="diamond-3" src="img/diamond-hide.png" alt="diamond">
+            <img class="diamond" id="diamond-4" src="img/diamond-hide.png" alt="diamond">
+            <img class="diamond" id="diamond-5" src="img/diamond-hide.png" alt="diamond">
+        </section>
+    </body>
+
+</html>
